@@ -8,6 +8,7 @@ Great for testing simple deployments on Cloud
 Install node version manager (nvm) by typing the following at the command line.
 
 ```bash
+sudo su -
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 Activate nvm by typing the following at the command line.
@@ -47,10 +48,15 @@ This command will print the git version in the terminal.
 Run below command to clone the code repository from Github:
 
 ```bash
-git clone https://github.com/sumant-mishra/node-app.git
+git clone https://github.com/yeshwanthlm/nodejs-on-ec2.git
 ```
 
+Get inside the directory and Install Packages
+
+```bash
+cd nodejs-on-ec2
 npm install
+```
 
 Start the application
 To start the application, run the below command in the terminal:
