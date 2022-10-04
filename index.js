@@ -1,7 +1,7 @@
-const http = require('http');
+var http = require('http');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  const msg = 'A Monk in Cloud!\n'
-  res.end(msg);
-}).listen(80);
+//create a server object:
+http.createServer(function (req, res) {
+  res.write('A Monk in Cloud'); //write a response to the client
+  res.end(); //end the response
+}).listen(80); //the server object listens on port 80
